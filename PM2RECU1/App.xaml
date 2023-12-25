@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PM2RECU1"
+             x:Class="PM2RECU1.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Entry Style -->
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="DarkGray" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="PlaceholderColor" Value="Gray" />
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">HelveticaNeue</On>
+                            <On Platform="Android">sans-serif-light</On>
+                            <On Platform="UWP">Segoe UI</On>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Button Style -->
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="LightGray"/>
+                <Setter Property="TextColor" Value="DarkSlateGray" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">HelveticaNeue-Bold</On>
+                            <On Platform="Android">sans-serif-bold</On>
+                            <On Platform="UWP">Segoe UI</On>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Label Style -->
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="TextColor" Value="DarkSlateGray"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">HelveticaNeue</On>
+                            <On Platform="Android">sans-serif-light</On>
+                            <On Platform="UWP">Segoe UI</On>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <!-- Editor Style -->
+            <Style TargetType="Editor">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="TextColor" Value="DarkGray"/>
+                <Setter Property="FontFamily">
+                    <Setter.Value>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS">HelveticaNeue</On>
+                            <On Platform="Android">sans-serif-light</On>
+                            <On Platform="UWP">Segoe UI</On>
+                        </OnPlatform>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
